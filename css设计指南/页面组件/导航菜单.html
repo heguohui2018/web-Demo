@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>菜单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            width: 200px;
+            margin: 50px;
+        }
+
+        .list1 li {
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 5px 10px 3px;
+        }
+
+        .list1 li {
+            list-style-type: none;
+            padding: 3px 10px;
+        }
+
+        /* 非首位子选择器 */
+        .list1 li+li {
+            border-top: 1px solid orange;
+        }
+
+        /* 为超链接添加样式 */
+        .list1 a {
+            text-decoration: none;
+            font: 20px;
+            font-weight: normal;
+            color:orangered;
+            background: black;
+        }
+
+        /* 悬停高亮 */
+        .list1 a:hover {
+            color: greenyellow;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- 纵向列表菜单 -->
+    <nav class="list1">
+        <ul>
+            <li><a href="">纵向列表菜单</a></li>
+            <li><a href="">纵向列表菜单</a></li>
+            <li><a href="">纵向列表菜单</a></li>
+            <li><a href="">纵向列表菜单</a></li>
+            <li><a href="">纵向列表菜单</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
