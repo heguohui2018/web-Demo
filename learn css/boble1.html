@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bobble</title>
+    <style>
+        button {
+            z-index: 1;
+            position: relative;
+            font-size: inherit;
+            font-family: inherit;
+            color: yellow;
+            padding: .5em 1em;
+            outline: none;
+            border: none;
+            background-color: hsl(236, 32%, 26%);
+            overflow: hidden;
+            transition: color 0.4s ease-in-out;
+        }
+
+        /* ::before创建一个伪元素，让其成为选中元素的第一个子元素， */
+        button::before {
+            content: '';
+            /* content为元素添加修饰内容 */
+            z-index: -1;
+            position: absolute;
+            top: 100%;
+            right: 100%;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            background-color: #3cefff;
+            transform-origin: center;
+            transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+            transition: transform 0.45s ease-in-out;
+        }
+        button:hover {
+            cursor: pointer;
+            /* cursor: 定义当鼠标放在元素上方时鼠标指针的显示样式*/
+            color: orange;
+            /* 元素内容的前景色 */
+        }
+
+        button:hover::before {
+            transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+        }
+    </style>
+</head>
+<body>
+    <!-- 当鼠标移动到按钮上时会出现出现闪动，从左下角过度到右上角。 -->
+    <button>Bobble</button>
+    
+</body>
+</html>
