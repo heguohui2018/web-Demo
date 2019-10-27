@@ -17,10 +17,12 @@
             border: none;
             background-color: hsl(236, 32%, 26%);
             overflow: hidden;
+
             transition: color 0.4s ease-in-out;
+            /* 过度效果 */
         }
 
-        /* ::before创建一个伪元素，让其成为选中元素的第一个子元素， */
+        /* ::before创建一个伪元素，让其成为选中元素的第一个子元素， */ 
         button::before {
             content: '';
             /* content为元素添加修饰内容 */
@@ -36,9 +38,10 @@
             transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
             transition: transform 0.45s ease-in-out;
         }
+
         button:hover {
             cursor: pointer;
-            /* cursor: 定义当鼠标放在元素上方时鼠标指针的显示样式*/
+            /* cursor: 定义当鼠标放在元素上方时鼠标指针的显示样式 */
             color: orange;
             /* 元素内容的前景色 */
         }
