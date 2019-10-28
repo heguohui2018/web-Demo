@@ -28,9 +28,20 @@
             height: 1em;
             border-radius: 50%;
             background-color: #3cefff;
-            transform-origin: center;;
+            
+            transform-origin: center;
+            /* 指定原点位置，默认值为元素中心 */
+
             transform: translate3d(-50%,-50%,0) scale3d(0,0,0);
-            transition: transform 9.45s ease-in-out;
+            transition: transform 0.45s ease-in-out;
+        }
+        
+        button:hover {
+            cursor: pointer;
+            color: #161616;
+        }
+        button:hover::before {
+            transform: translate3d(-50%,-50% ,0) scale3d(15,15,15);
         }
         
     </style>
