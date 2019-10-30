@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Bobble</title>
+        <style>
+            button {
+                z-index: 1;
+                position: relative;
+                font-size: inherlt;
+                font-family: inherlt;
+                color: white;
+                padding: 0.5em 1em;
+                outline: none;
+                border: none;
+                background-color: hsl(236, 32%, 26%);
+                overflow: hidden;
+                transition: color 0.4s ease-in-out;
+            }
+
+            button::before {
+                z-index: -1;
+                content: "";
+                position: absolute;
+                bottom: 100%;
+                right: 100%;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-color: #3cefff;
+                transform-origin: center;
+                transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
+            }
+
+            button:hover {
+                cursor: pointer;
+                color: #161616;
+            }
+
+            button:hover::before {
+                transform: translate3d(50%, 50%, 0) scale3d(15, 15, 15);
+            }
+        </style>
+    </head>
+    <body>
+        <button>Bobble</button>
+    </body>
+</html>
