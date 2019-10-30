@@ -1,6 +1,9 @@
 # 记录css
 
-## 使用css相关属性
+## learn cssfx
+    [cssfx](https://github.com/jolaleye/cssfx):是使用纯css实现的特效，
+
+## 使用css相关属性,以及在相关参数的详细介绍
     z-index:使定位元素及其子元素在叠加时，确定元素在z轴的叠加顺序,值越大，越叠放在最上方
             使用z-index前提条件为：该元素为定位元素，也就是说在属性中使用position属性;
 
