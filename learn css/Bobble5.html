@@ -9,6 +9,25 @@
                 position: relative;
                 font-size: inherit;
                 flex-flow: inherit;
+                color: white;
+                padding: 0.5em 1em;
+                outline: none;
+                border: none;
+                background-color: hsl(236,32%,26%);
+                overflow: hidden;
+                transition: color 0.4s ease-in-out;
+            }
+            button::before {
+                content: '';
+                z-index: -1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 1em;
+                height: 1em;
+                border-radius: 50%;
+                background-color: #3cefff;
+                transform-origin: center;
             }
         </style>
     </head>
