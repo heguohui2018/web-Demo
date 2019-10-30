@@ -1,7 +1,5 @@
-# 记录css
-
-## learn cssfx
-    [cssfx](https://github.com/jolaleye/cssfx):是使用纯css实现的特效，
+# 学习css特效
+    [cssfx](https://github.com/jolaleye/cssfx):这个项目是使用纯css实现的按钮特效，通过记录相关属性，已作备忘
 
 ## 使用css相关属性,以及在相关参数的详细介绍
     z-index:使定位元素及其子元素在叠加时，确定元素在z轴的叠加顺序,值越大，越叠放在最上方
