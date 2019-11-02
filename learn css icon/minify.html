@@ -18,13 +18,28 @@
             transform: rotate(-45deg);
         }
 
-        .minify.icon ::before {
+        .minify.icon::before {
             content: '';
             position: absolute;
             top: 12px;
             left: 5px;
             height: 6px;
             width: 1px;
+            background-color: currentColor;
+        }
+
+        .minify.icon i {
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            transform: rotate(45deg);
+        }
+
+        .minify.icon i::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 1px;
             background-color: currentColor;
         }
 
