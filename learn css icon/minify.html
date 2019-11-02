@@ -17,12 +17,23 @@
             border-radius: 100%;
             transform: rotate(-45deg);
         }
+
+        .minify.icon ::before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: 5px;
+            height: 6px;
+            width: 1px;
+            background-color: currentColor;
+        }
+
+        
     
     
     </style>
 </head>
 <body>
-    <div class="minify icon"></div>
-    
+    <div class="minify icon"><i></i></div>
 </body>
 </html>
