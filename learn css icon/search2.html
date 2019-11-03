@@ -1,62 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>magnify search icon2</title>
-    <style>
-        .magnify.icon {
-            color: #000;
-            position: absolute;
-            margin-top: 2px;
-            margin-left: 3px;
-            width: 12px;
-            height: 12px;
-            border: 1px solid currentColor;
-            border-radius: 100%;
-            transform: rotate(-45deg);
-        }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>magnify search icon2</title>
+        <style>
+            .magnify.icon {
+                color: #000;
+                position: absolute;
+                margin-top: 2px;
+                margin-left: 3px;
+                width: 12px;
+                height: 12px;
+                border: 1px solid currentColor;
+                border-radius: 100%;
+                transform: rotate(-45deg);
+            }
 
-        .magnify.icon::before {
-            content: '';
-            position: absolute;
-            top: 12px;
-            left: 5px;
-            height: 12px;
-            width: 1px;
-            background-color: currentColor;
+            .magnify.icon::before {
+                content: "";
+                position: absolute;
+                top: 12px;
+                left: 5px;
+                height: 12px;
+                width: 1px;
+                background-color: currentColor;
+            }
 
-        }
+            .magnify.icon i {
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                transform: rotate(45deg);
+            }
 
-        .magnify.icon i {
-            position: absolute;
-            top: 4px;
-            left: 4px;
-            transform: rotate(45deg);
-        }
+            .magnify.icon i::before {
+                content: "";
+                position: absolute;
+                width: 6px;
+                height: 1px;
+                background-color: currentColor;
+            }
 
-        .magnify.icon i::before {
-            content: '';
-            position: absolute;
-            width: 6px;
-            height: 1px;
-            background-color: currentColor;
-        }
-
-        .magnify.icon i::after {
-            content: '';
-            position: absolute;
-            width: 6px;
-            height: 1px;
-            background-color: currentColor;
-            transform: rotate(90deg);
-        }
-    
-    </style>
-</head>
-<body>
-    <div class="magnify icon"><i></i></div>
-    
-</body>
+            .magnify.icon i::after {
+                content: "";
+                position: absolute;
+                width: 6px;
+                height: 1px;
+                background-color: currentColor;
+                transform: rotate(90deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="magnify icon"><i></i></div>
+    </body>
 </html>
+
