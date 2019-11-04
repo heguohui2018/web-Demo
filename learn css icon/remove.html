@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>remove icon</title>
+	<style>
+		.remove.icon {
+			color: #000;
+			position: absolute;
+			margin-left: 3px;
+			margin-top: 10px;
+		}
+
+		.remove.icon::before {
+			content: '';
+			position: absolute;
+			width: 15px;
+			height: 1px;
+			background-color: currentColor;
+			transform: rotate(45deg);
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="remove icon"></div>
+	
+</body>
+</html>
