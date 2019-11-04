@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>trash icon</title>
+	<style>
+		.trash.icon {
+			color: #000;
+			position: absolute;
+			margin-left: 5px;
+			margin-top: 7px;
+			width: 9px;
+			height: 10px;
+			border-left: 1px solid currentColor;
+			border-right: 1px solid currentColor;
+			border-bottom: 1px solid currentColor;
+		}
+
+		.trash.icon::before {
+			content:'';
+			position: absolute;
+			left: -4px;
+			top: -2px;
+			width: 17px;
+			height: 1px;
+			background-color:currentColor;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="trash icon"></div>
+	
+</body>
+</html>
