@@ -13,7 +13,19 @@
 			height: 10px;
 			border: 1px solid currentColor;
 			border-radius: 2px;
-			
+		}
+
+		.char.icon::before {
+			content:'';
+			position: absolute;
+			left: 3px;
+			top: 8px;
+			width: 4px;
+			height: 4px;
+			transform: rotate(45deg);
+			background-color:white;
+			border-bottom: 1px solid currentColor;
+			border-right: 1px solid currentColor;
 		}
 
 
