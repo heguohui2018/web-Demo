@@ -119,3 +119,14 @@ s,i,em{
     padding: 0 20px 0 20px;
     position: relative;
 }
+
+.dt i,
+.fore i {
+    font: 400 15px/15px "宋体";
+    position: absolute;
+    top: 13px;
+    right: 3px;
+    height: 7px;
+    overflow: hidden;
+    width: 15px;
+}
