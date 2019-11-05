@@ -115,7 +115,7 @@ s,i,em{
     background-color: #f1f1f1;
 }
 
-.dt , .shortcut .fore {
+.dt ,.shortcut .fore {
     padding: 0 20px 0 20px;
     position: relative;
 }
@@ -129,4 +129,11 @@ s,i,em{
     height: 7px;
     overflow: hidden;
     width: 15px;
+}
+
+.dt s,
+.fore s {
+    position: absolute;
+    top: -8px;
+    left: 0;
 }
