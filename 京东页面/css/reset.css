@@ -4,3 +4,22 @@
     margin: 0;
     outline-style: none;
 }
+
+ul li {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun","宋体";
+}
+
+section,input {
+    vertical-align: middle;
+}
+
+section ,input,textarea {
+    font-size: 12px;
+    margin: 0;
+}
