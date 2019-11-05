@@ -108,3 +108,14 @@ s,i,em{
 .hide {
     display: none
 }
+
+.shortcut {
+    height: 30px;
+    line-height: 30xp;
+    background-color: #f1f1f1;
+}
+
+.dt , .shortcut .fore {
+    padding: 0 20px 0 20px;
+    position: relative;
+}
