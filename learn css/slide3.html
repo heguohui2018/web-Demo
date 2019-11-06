@@ -17,6 +17,20 @@
             color: white;
             background-color: hsl(236,32%,26%);
         }
+
+        button::before {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: pink;
+            transform-origin: center right;
+            transform: scaleX(0);
+            transition: transform 0.25s ease-in-out;
+        }
     
     </style>
 </head>
