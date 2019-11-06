@@ -7,7 +7,11 @@
 
     transiton:过度动画
     transform:翻转动画
-    outline
+
+    outline:轮廓属性
+            轮廓属性包括：轮廓线线条样式，轮廓宽度，轮廓颜色(ottline-style,outline-width,outline-color)
+            轮廓线主要绘制在边框线外，
+
     overflow
     conteent
     position;定位属性

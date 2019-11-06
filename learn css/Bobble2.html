@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Bobble</title>
-    <style>
-        button {
-            z-index:1;
-            position:relative;
-            font-size: initial;
-            font-family: initial;
-            color: white;
-            padding: .5em 1em;
-            outline: inherit;
-            border: none;
-            background-color: hsl(236, 30%, 26%);
-            overflow: hidden;
-            transition: color 0.4s ease-in-out;
-        }
+	<meta charset="UTF-8" />
+	<title>Bobble</title>
+	<style>
+		button {
+			z-index: 1;
+			position: relative;
+			font-size: initial;
+			font-family: initial;
+			color: white;
+			padding: 0.5em 1em;
+			outline: inherit;
+			border: none;
+			background-color: hsl(236, 30%, 26%);
+			overflow: hidden;
+			transition: color 0.4s ease-in-out;
+		}
 
-        button::before {
-            z-index: -1;
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: 100%;
-            width: 1em;
-            height: 1em;
-            border-radius: 50%;
-            background-color: #3cefff;
-            
-            transform-origin: center;
-            /* 指定原点位置，默认值为元素中心 */
+		button::before {
+			z-index: -1;
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 100%;
+			width: 1em;
+			height: 1em;
+			border-radius: 50%;
+			background-color: #3cefff;
 
-            transform: translate3d(-50%,-50%,0) scale3d(0,0,0);
-            transition: transform 0.45s ease-in-out;
-        }
-        
-        button:hover {
-            cursor: pointer;
-            color: #161616;
-        }
-        button:hover::before {
-            transform: translate3d(-50%,-50% ,0) scale3d(15,15,15);
-        }
-        
-    </style>
+			transform-origin: center;
+			/* 指定原点位置，默认值为元素中心 */
+
+			transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+			transition: transform 0.45s ease-in-out;
+		}
+
+		button:hover {
+			cursor: pointer;
+			color: #161616;
+		}
+		button:hover::before {
+			transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+		}
+	</style>
 </head>
 <body>
-    <button>Bobble</button>
+	<button>Bobble</button>
 </body>
 </html>
