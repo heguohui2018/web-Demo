@@ -17,6 +17,29 @@
             border: none;
             background-color: hsl(236,32%,26%);
         }
+
+        button::before {
+            contain: '';
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #ffcc22;
+            transform-origin: center left;
+            transform: scaleX(0);
+            transition: transform 0.25s ease-in-out;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        button:hover::before {
+            transform-origin: center right;
+            transform: scaleX(1);
+        }
     
     </style>
 </head>
