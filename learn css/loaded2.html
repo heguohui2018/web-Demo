@@ -22,7 +22,25 @@
 			height: 2em;
 			background-color: hsla(185,100%,62%,0.75%);
 			transform-origin: center bottom;
+			transform: scaleY(1);
 			animation: fill 3s linear infinite;
+		}
+		
+		@keyframes spin {
+			50%,
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes fill {
+			25%,
+			50%{
+				transform: rotate(360deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
 		}
 
 	</style>
