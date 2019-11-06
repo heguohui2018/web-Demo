@@ -31,6 +31,15 @@
             transform: scaleX(0);
             transition: transform 0.25s ease-in-out;
         }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        button:hover::before {
+            transform-origin: center left;
+            transform: scaleX(1);
+        }
     
     </style>
 </head>
