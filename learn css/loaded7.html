@@ -5,7 +5,7 @@
 	<title>loading7</title>
 	<style>
 		.laoding {
-			width: 200px;
+			width: 150px;
 			height: 4px;
 			border-radius: 2px;
 			margin: 0 auto;
@@ -15,7 +15,7 @@
 			animation:changeBgColor 1.04s ease-in infinite alternate;
 		}
 
-		.load span {
+		.loading span {
 			display: inline-block;
 			width: 16px;
 			height: 16px;
@@ -27,6 +27,24 @@
 			animation: changePosition 1.04s ease-in infinite alternate;
 		}
 
+		@keyframes changeBgColor {
+			0%{
+				background: lightgreen;
+			}
+			100%{
+				background: lightblue;
+			}
+		}
+
+		@keyframes changePosition {
+			0%{
+				background: lightgreen;
+			}
+			100%{
+				margin-left: 142px;
+				background: lightblue;
+			}
+		}
 	</style>
 </head>
 <body>
