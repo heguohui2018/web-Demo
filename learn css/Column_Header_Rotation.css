@@ -1,30 +1,42 @@
-.table-header-rotated {
-	border-collapse: collapse;
-}
-.csstransforms .table-header-rotated td {
-	width: 30px;
-}
-.no-csstransforms .table-header-rotated th {
-	padding: 5px 10px;
-}
-.table-header-rotated td {
+.table-header-rotated td{
+	width: 40px;
+	border-top: 1px solid #dddddd;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	vertical-align: middle;
 	text-align: center;
-	padding: 10px 5px;
-	border: 1px solid #ccc;
 }
-.csstransforms .table-header-rotated th.rotate {
-	height: 140px;
-	white-space: nowrap;
+
+.table-header-rotated .rotated{
+	height: 80px;
+	width: 40px;
+	min-width: 40px;
+	max-width: 40px;
+	position: relative;
+	vertical-align: bottom;
+	padding: 0;
+	font-size: 12px;
+	line-height: 0.8;
 }
-.csstransforms .table-header-rotated th.rotate > div {
-	transform: translate(25px, 51px) rotate(315deg);
-	width: 30px;
+
+.table-header-rotated .rotated > div{
+	position: relative;
+	top: 0px;
+	left: 40px; /* 80 * tan(45) / 2 = 40 where 80 is the height on the cell and 45 is the transform angle*/
+	height: 100%;
+	transform:skew(-45deg,0deg);
+	overflow: hidden;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	border-top: 1px solid #dddddd;
 }
-.csstransforms .table-header-rotated th.rotate > div > span {
-	border-bottom: 1px solid #ccc;
-	padding: 5px 10px;
-}
-.table-header-rotated th.row-header {
-	padding: 0 10px;
-	border-bottom: 1px solid #ccc;
+
+.table-header-rotated .rotated span {
+	transform:skew(45deg,0deg) rotrated(315deg);
+	position: absolute;
+	bottom: 30px; 
+	left: -25px; 
+	display: inline-block;
+	width: 85px; 
+	text-align: left;
 }
