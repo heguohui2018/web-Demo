@@ -32,7 +32,7 @@
 }
 
 .table-header-rotated .rotated span {
-	transform:skew(45deg,0deg) rotrated(315deg);
+	transform:skew(45deg,0deg) rotated(315deg);
 	position: absolute;
 	bottom: 30px; 
 	left: -25px; 
