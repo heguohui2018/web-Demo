@@ -1,3 +1,7 @@
+.table-header-rotated th.row-header {
+	width: auto;
+}
+
 .table-header-rotated td{
 	width: 40px;
 	border-top: 1px solid #dddddd;
