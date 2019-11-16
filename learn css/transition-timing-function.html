@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		.box1 {
+			background: pink;
+			width: 200px;
+			height: 200px;
+			transition: width 2s;
+			transition-timing-function: linear;
+		}
+
+		.box2 {
+			background: orange;
+			width: 200px;
+			height: 200px;
+			transition: width 2s;
+			transition-timing-function: ease;
+		}
+
+		.box3 {
+			background: gold;
+			width: 200px;
+			height: 200px;
+			transition: width 2s;
+			transition-timing-function: ease-in;
+		}
+
+		.box4 {
+			background: lightblue;
+			width: 200px;
+			height: 200px;
+			transition: width 2s;
+			transition-timing-function: ease-out;
+		}
+
+		.box5 {
+			background: green;
+			width: 200px;
+			height: 200px;
+			transition: width 2s;
+			transition-timing-function: ease-in-out;
+		}
+
+		p:hover{
+			width: 400px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<p class="box1">box1:<br>transition-timing-function的值为linear,以相同的速度从开始过度到结束的过度效果</p>
+	<p class="box2">box2:<br>transition-timing-function的值为esse,以慢速开始然后变快，然后在慢速结束的过度效果</p>
+	<p class="box3">box3:<br>transition-timing-function值为ease-in，以慢速开始的过度效果</p>
+	<p class="box4">box4:<br>transition-timing-function值为ease-out，以慢速结束的过度效果</p>
+	<p class="box5">box5:<br>transition-timing-function值为ease-in-out,以慢速开始，以慢速结束的过度效果</p>
+</body>
+</html>
