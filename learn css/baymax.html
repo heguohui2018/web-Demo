@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>baymax</title>
+	<style>
+		body {
+			background:radial-gradient(circle at center, #fff, #fff 50%, #aaa);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			height: 100vh;
+			/* vh指视口高度，1vh为视口高度的1%，而这里的100vh，就是视口高度的：视口高度*100*1% */
+		}
+
+		.baymax {
+			border-bottom: 1.5em solid orange;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 50%;
+			transform: translate(-50%,-40%);
+		}
+
+		.baymax::before {
+			background: pink;
+			border-radius: 50%;
+			content: '';
+			position: absolute;
+			width: 12em;
+			height: 12em;
+			left: -9em;
+			top: -6em;
+			transform: skewX(-4deg);
+		}
+
+		.baymax::after {
+			background: pink;
+			border-radius: 50%;
+			content: '';
+			position: absolute;
+			width: 12em;
+			height: 12em;
+			left: -9em;
+			top: -6em;
+			transform: skewX(4deg);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="baymax"></div>
+</body>
+</html>
