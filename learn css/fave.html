@@ -14,13 +14,22 @@
 			background-position: 0 0;
 			transform: translate(-50%,-50%);
 			cursor: pointer;
+			animation: fave-haart 1s step(28);
 		}
 
 		.fave:hover {
-			background-position: -3519px 0;
-			transition: background 1s steps(5s);
+			background-position: -2800px 0;
+			transition: background 1s steps(28);
 		}
-
+		
+		@keyframes fave-haart{
+			0% {
+				background-position: 0 0;
+			}
+			100%{
+				background-position: -2800px 0;
+			}
+		}
 
 	</style>
 </head>
