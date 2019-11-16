@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>button</title>
+	<style>
+		button::after {
+			content: "";
+			position: absolute;
+			top: -50%;
+			right: -50%;
+			left: -50%;
+			bottom: -50%;
+			background: linear-gradient(to bottom, rgba(229,172,142,0),rgba(255,255,255,0.5),rgba(229,172,142,0));
+			transform: rotateZ(60deg) translate(-5em,7.5em);
+		}
+
+	</style>
+</head>
+<body>
+	<button>点击我</button>
+</body>
+</html>
