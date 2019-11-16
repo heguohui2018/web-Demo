@@ -26,6 +26,16 @@
 			line-height: 32px;
 		}
 
+		button:hover::after, button:focus::after {
+			animation: sheen 1s forwards;
+		}
+
+		@keyframes sheen {
+			100% {
+				transform: rotateZ(60deg) translate(1em,-9em);
+			}
+		}
+
 	</style>
 </head>
 <body>
