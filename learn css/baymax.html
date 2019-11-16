@@ -45,6 +45,36 @@
 			transform: skewX(4deg);
 		}
 
+		.baymax::before {
+			background: linear-gradient(to bottom,#efefef, #efefef 50%,#000 50%,#000);
+			background-position: 0 --100%;
+			background-size: 200% 200%;
+		}
+
+		.baymax::after {
+			background: linear-gradient(to bottom,#efefef, #efefef 50%,#000 50%,#000);
+			background-position: 0 --100%;
+			background-size: 200% 200%;
+		}
+
+		@keyframes blink {
+			0%, 50% {
+				background-position: 0 100%;
+			}
+			85%, 95% {
+				background-position: 0 70%;
+			}
+			100% {
+				background-position: 0 100%;
+			}
+		}
+		.baymax::before {
+			animation: blink 6s infinite;
+		}
+
+		.baymax::after {
+			animation: blink 6s 0.1s infinite;
+		}
 	</style>
 </head>
 <body>
