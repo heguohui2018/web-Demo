@@ -20,3 +20,10 @@
     scale3d()
     :hover :鼠标指针悬浮效果
     @keyframes :定义动画序列关键帧的样式.
+
+	浏览器视口是指浏览器的可视区域，可以通过如下方式获取浏览器视口的宽度和高度：
+		首先打开浏览的检查元素，然后切换到控制台，在控制台下运行这两条js语句
+		document.documentElement.clientWidth 
+		获取视口宽度
+		document.documentElement.clientHeight
+		获取视口高度
