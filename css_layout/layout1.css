@@ -1,0 +1,26 @@
+html {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-size-adjust:100%;
+}
+
+body {
+ 	margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
