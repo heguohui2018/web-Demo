@@ -3,4 +3,21 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #666;
+}
+
+.warpper {
+	padding: 5px;
+	max-width: 960px;
+	width: 95px;
+	margin: 29px auto;
+}
+
+header {
+	padding: 0 15px;
 }
