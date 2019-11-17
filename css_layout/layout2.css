@@ -39,3 +39,11 @@ header {
 footer {
 	padding: 0 15px;
 }
+
+@media screen and (max-width: 980px){
+	.columns .column {
+		margin-bottom: 5px;
+		flex-basis:40%;
+	}
+
+}
