@@ -24,3 +24,12 @@ video {
 	display: inline-block;
 	vertical-align: baseline;
 }
+
+a {
+	background-color: transparent;
+}
+
+a:active,
+a:hover {
+	outline: none;
+}
