@@ -21,3 +21,21 @@ body {
 header {
 	padding: 0 15px;
 }
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1px solid orange;
+	margin: 2px;
+	padding: 10px;
+}
+
+footer {
+	padding: 0 15px;
+}
