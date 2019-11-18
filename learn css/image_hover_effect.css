@@ -58,6 +58,7 @@ span {
 	transition: 3s ease-in-out;
 	opacity: 0;
 }
+<<<<<<< HEAD
 
 figure {
 	width: 300px;
@@ -70,3 +71,5 @@ figure:hover+span {
 	bottom: -36px;
 	opacity: 0;
 }
+=======
+>>>>>>> 4ae3f4a0fddfb0ced78ef7161b75cf4d94f04141
