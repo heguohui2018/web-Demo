@@ -1,0 +1,10 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: orange;
+}
