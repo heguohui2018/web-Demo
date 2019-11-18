@@ -8,3 +8,21 @@ body {
 	font-weight: normal;
 	color: orange;
 }
+
+h2 {
+	margin: 60px 15px 0;
+}
+
+span {
+	margin-left: 1em;
+	color: pink;
+	font-size: 85%;
+}
+
+.column {
+	margin: 15px 15px 0;
+}
+
+.column:last-child {
+	padding-bottom: 60px;
+}
