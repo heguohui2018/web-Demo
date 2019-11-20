@@ -1,0 +1,26 @@
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+
+.dropdownmenu ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width: auto;
+}
+
+.dropdownmenu a {
+	background: #30a6e6;
+	color: #fff;
+	display: block;
+	font: bold 12px/20px sans;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+}
