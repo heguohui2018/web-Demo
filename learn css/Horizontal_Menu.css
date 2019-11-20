@@ -23,4 +23,24 @@
 	padding: 10px 25px;
 	text-align: center;
 	text-decoration: none;
+	transition: all .25s esse;
+}
+
+.dangerous li:hover a {
+	background: #000;
+}
+
+.submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+
+li:hover ul.submenu {
+	opacity: 1;
+	top: 40px;
+	visibility: visible;
 }
