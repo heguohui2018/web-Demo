@@ -23,7 +23,7 @@
 	padding: 10px 25px;
 	text-align: center;
 	text-decoration: none;
-	transition: all .25s esse;
+	transition: all .26s esse;
 }
 
 .dropdownmenu li:hover a {
@@ -51,7 +51,7 @@ li:hover ul.submenu {
 }
 
 .submenu a:hover {
-	background: #df4b05;
+	background: pink;
 }
 
 .submenu a {
