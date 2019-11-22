@@ -8,12 +8,6 @@ html {
 	box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-	height: initial;
-}
-
 body {
 	position: relative;
 	padding-bottom: 6rem;
