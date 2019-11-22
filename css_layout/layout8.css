@@ -4,3 +4,27 @@
 	margin: 0;
 	padding: 0;
 }
+
+html,body {
+	height: 100%;
+	background: #222;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+	display: block;
+	position: relative;
+	margin: 40px auto;
+	height: auto;
+	width: 500px;
+	padding: 20px;
+}
+
+h2 {
+	color: pink;
+}
+
+.container ul {
+	list-style: none;
+	overflow: auto;
+}
