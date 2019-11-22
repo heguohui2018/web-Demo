@@ -17,4 +17,27 @@ html {
 body {
 	position: relative;
 	padding-bottom: 6rem;
+	min-height: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+article {
+	margin: 0 auto;
+	padding-top: 60px;
+	width: 94%;
+	max-width: 800px;
+}
+
+article h1 {
+	margin-top: 0;
+}
+
+footer {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	padding: 1rem;
+	background-color: red;
+	text-align: center;
 }
