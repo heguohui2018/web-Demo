@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button-transition {
+	perspective: 1000px;
+	background: linear-gradient(to totton,#7b4397,#dc2430);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

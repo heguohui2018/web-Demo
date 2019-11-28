@@ -43,3 +43,9 @@ ul li input[type=radio]{
 	position: absolute;
 	visibility: hidden;
 }
+
+ul li .check {
+	display: block;
+	position: absolute;
+	border: 1px solid red;
+}
