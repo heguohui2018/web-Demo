@@ -15,4 +15,15 @@ a {
 
 .thumbnail-img {
 	width: 100%;
+	display: block;
 }
+
+.thumbnail-item {
+	display: block;
+	border: 1px solid rgba(100%, 100%, 100%, 0.8);
+}
+
+.thumbnail-list {
+	list-style: none;
+}
+
