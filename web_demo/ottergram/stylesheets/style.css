@@ -27,13 +27,15 @@ a {
 }
 
 .thumbnail-item {
-	display: block;
+	display: inline-block;
+	width: 120px;
 	border: 1px solid rgba(100%, 100%, 100%, 0.8);
 }
 
 .thumbnail-list {
 	list-style: none;
 	padding: 0;
+	white-space: nowrap;
 }
 
 .thumbnail-item + .thumbnail-item {
