@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+	<button id="btn">发送一个ajax请求</button>
+	<div id="box"></div>
+	<script>
+		$("#btn").click(function () {
+			$.post('demo1.php',{'username':'科学家'},function(data){
+				$("#box").html(data);
+			});
+		});
+	</script>
+</body>
+</html>
