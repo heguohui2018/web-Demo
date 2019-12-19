@@ -16,13 +16,26 @@
 }
 
 .boxes {
-	/* display: flex; */
+	display: flex;
+	border: 1px solid green;
 }
 
-.boxes .zero {
-	/* align-items: stretch; */
+.zero {
+	align-items: stretch;
 }
 
 .one {
-	/* align-items: flex-start; */
+	align-items: flex-start;
+}
+
+.two {
+	align-items: baseline;
+}
+
+.three {
+	align-items: center;
+}
+
+.four {
+	align-items: flex-end;
 }
