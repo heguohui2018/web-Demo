@@ -10,8 +10,13 @@
 	<div id="box"></div>
 	<script>
 		$("#btn").click(function () {
-			$.get("demo1.php",{"username":"科学家"},function(data){
-				$("#box").html(data);
+			$.ajax({
+				type: "method",
+				url: "demo1.php",
+				data: {'username':'科学家','age':20},
+				dataType: "html",
+				success: function (response) {
+				}
 			});
 		});
 	</script>
