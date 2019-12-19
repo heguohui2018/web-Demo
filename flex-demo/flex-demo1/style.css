@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: orange;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: flex;
+
+	/* 实现居中对齐 */
+	align-items: center;
+	justify-content: center;
+}
