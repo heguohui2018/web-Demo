@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: gray;
+}
+
+.card {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: pink;
+	overflow: hidden;
+}
+
+input,.toggle {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 20px;
+	right: 20px;
+	outline: none;
+	z-index: 10;
+}
+
+input {
+	opacity: 0;
+}
+
+.toggle {
+	pointer-events: none;
+	border-radius: 50%;
+	background: #fff;
+	transition: 0.5s;
+
+	/* 这两行让加号位置居中 */
+	text-align: center;
+	line-height: 50px;
+
+	font-size: 36px;
+	box-shadow: 0 0 0 0px red;
+}
+
+input:checked ~ .toggle {
+	box-shadow: 0 0 0 500px red;
+	transform: rotate(270deg);
+}
+
+.imgBx ,.details{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100px;
+}
+
+.details {
+	color: yellow;
+	padding: 50px;
+	box-sizing: border-box;
+	z-index: 11;
+	pointer-events: none;
+	transition: .5s;
+	opacity: 0;
+}
+
+input:checked ~ .details {
+	opacity: 1;
+	transition-delay: .3s;
+}
