@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pageflip effect</title>
+	<style>
+		* {
+			margin: 0;
+			box-sizing: border-box;
+			padding: 0;
+		}
+
+		html,body {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./img.jpg);
+			background-size: cover;
+		}
+
+		.wrapper {
+			width: 100%;
+			height: 100%;
+			perspective: 2000px;
+			padding: 5%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.left, .middle, .right {
+			float: left;
+			position: relative;
+			background-color: white;
+			height: 100%;
+			width: 33%;
+			max-width: 300px;
+			max-height: 400px;
+		}
+
+		.left, .right {
+			transition: 0.75s ease-in-out;
+		}
+
+		.left .open ,.right.open {
+			transform: rotateY(8deg);
+			transition: 0.7s ease-in-out;
+		}
+
+		.lef {
+			z-index: 20;
+			transform: rotateY(180deg);
+			transform-origin: 100% 50%;
+		}
+
+		.right {
+			transform: rotateY(-180deg);
+			transform-origin: 0% 50%;
+		}
+
+		.front, .back {
+			height: 100%;
+			width: 1005;
+			position: absolute;
+			background-color: white;
+			top: 0;
+		}
+
+		.front {
+			transform: rotateY(180deg);
+			z-index: 5;
+		}
+
+		.back {
+			background-color: white;
+			z-index: 4;
+			backface-visibility: hidden;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="left">
+
+			<div class="front">
+				<div class="sectionwrap">
+					<h1>PAGE FLIP EFFECT</h1>
+					<br></br>
+					<p class="preview">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					</p>
+					<button class="openb">
+						<p>Read more.....</p>
+					</button>
+				</div>
+			</div>
+
+			<div class="back">
+				<div class="sectionwrap">
+					<h1>first</h1>
+					<br></br>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="middle">
+			<div class="sectionwrap">
+				<h1>second</h1>
+				<br></br>
+				<p>
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</p>
+			</div>
+		</div>
+
+		<div class="right">
+			<div class="sectionwrap">
+				<h1>thiro</h1>
+				<br></br>
+				<p>
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</p>
+			</div>
+			<button class="closeb">x</button>
+		</div>
+
+	</div>
+	
+</body>
+</html>
