@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+	/* 让背景图片平铺整个窗口 */
+	background: url(img.jpg) ;
+	background-size: cover;
+}
+
+.container {
+	/* 让整个区块居中 */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	width: 600px;
+	padding: 30px;
+	background: #fff;
+
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 15px 50px rgba(0, 0, 0, 1);
+}
+
+.circle {
+	width: 200px;
+	height: 200px;
+	background: url(img2.jpg);
+	border-radius: 50%;
+
+	/* 实现文字环绕 */
+	float: left;
+	shape-outside: circle();
+	margin: 30px 30px 30px 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	line-height: 22px;
+}
+
+h1 {
+	padding: 0;
+	font-size: 30px;
+}
