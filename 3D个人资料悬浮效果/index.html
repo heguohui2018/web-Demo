@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		/* 自定义属性*/
+		:root {
+			--color-secondary: #f7d891;
+			--color-white : white;
+			--color-accent : #fcf5f3;
+			--spacer : 1.25rem;
+			--d :2000ms;
+			--d2 :500ms;
+			--e2 : cubic-bezier(0.23,1,0.32,1);
+		}
+
+		body {
+			background-image: url(./background.png);
+			background-size: cover;
+			display: grid;
+			font-family: 'Courier New', Courier, monospace;
+			height: 100vh;
+			margin: 0;
+			overflow: hidden;
+			place-items: center;
+
+			/* 使用自定义属性 */
+			padding: var(--spacer);
+		}
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			max-width: 350px;
+			overflow-y:hidden;
+
+			/* 使用自定义属性 */
+			padding: 0 var(--spacer);
+
+			perspective: 1200px;
+			position: relative;
+			transform: translateY(30%);
+			transition: transform var(--d2) var(--e2);
+			margin-top: -30px !important;
+		}
+
+		.card.is-active {
+			animation: throw var(--d2) var(--e2) forwards;
+			overflow: hidden;
+		}
+
+		.card.is-closing {
+			transform: translateY(0);
+		}
+
+		.card-illustration {
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			background-color: var(--color-accent);
+			z-index: 7;
+		}
+
+		.card-content {
+			position: relative;
+			transform: scaleY(0);
+			transform-origin: 0 0;
+			z-index: 1;
+		}
+
+		.is-closing .card-content {
+			animation: slide-up var(--d2) var(--de2) forwards;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="card">
+		<div class="card-illustration">
+			<svg viewBox="0 0 100 100">
+				<img src="name.png" alt="">
+			</svg>
+		</div>
+
+		<div class="card-content">
+			<div class="card-info">
+				<h2 class="card-name">lorem</h2>
+				<h2 class="card-title">
+					with cool css3 effect
+				</h2>
+
+				<p class="card-desc">
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				</p>
+			</div>
+
+			<div class="card-actions">
+				<button class="btn btn-action">like</button>
+				<button class="btn btn-action">subscribe</button>
+			</div>
+		</div>
+
+		<button class="btn btn-close">
+			<svg viewBox="0 0 24 24">
+				<i class="fa fa-close"></i>
+			</svg>
+		</button>
+	</div>
+	
+</body>
+</html>
