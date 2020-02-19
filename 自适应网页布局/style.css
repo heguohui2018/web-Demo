@@ -44,6 +44,10 @@ body {
 	/* 控制 imgBox盒子的大小 */
 	width: 500px;
 	height: 400px;
+
+	/* 让图片所在容器悬浮于文字所在的容器之上 */
+	left: 25px;
+	z-index: 1;
 }
 
 .container .card .imgBox img {
