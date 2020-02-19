@@ -62,9 +62,9 @@ body {
 	object-fit: cover;
 }
 
-.container  .card .contentBox {
+.container .card .contentBox {
 	position: relative;
-	right: 0;
+	right: 25px;
 	width: 500px;
 	height: 400px;
 	background: gray;
@@ -72,15 +72,20 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+
+	/* 控制容器内文字效果 */
+	padding: 20px 60px 20px 100px;
 }
 
-.container  .card .contentBox:before {
+.container .card .contentBox:before {
 	content: "";
 	position: absolute;
 	top: -500px;
 	bottom: -50px;
 	left: 0;
 	right: 0;
+	background: #000;
+	z-index: -1;
 }
 
 .container .card .contentBox h2 {
