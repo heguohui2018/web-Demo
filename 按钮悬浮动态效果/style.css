@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+
+	/* 实现位置居中 */
+	position: relative;
+	top: 50vh;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.btn {
+	border: 1px solid orange;
+	background: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	cursor: pointer;
+	margin: 10px;
+	transition: .5s;
+}
+
+.btn1,.btn2 {
+	color: blue;
+}
+
+.btn3,.btn4 {
+	color: red;
+}
+
+.btn1:hover , .btn2:hover {
+	color: green;
+}
+
+.btn3:hover,.btn4:hover {
+	color: yellow;
+}
