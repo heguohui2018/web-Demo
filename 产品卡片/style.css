@@ -41,6 +41,7 @@ body {
 	background-size: cover;
 	/* 照片位置居中 */
 	background-position: center;
+	transition: .6s linear;
 }
 
 .product-color {
