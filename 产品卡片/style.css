@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1abc9c;
+	transition: .6s linear;
+}
+
+.product-card {
+	width: 400px;
+	background: white;
+	padding: 40px;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	/* 文本转换为大写 */
+	text-transform: uppercase;
+}
+
+.product-card h1 {
+	font-size: 22px;
+	margin-bottom: 4px;
+}
+
+.product-card p {
+	font-size: 14px;
+	color: #bbb;
+}
+
+.product-pic {
+	background-image: url(images/1.png);
+	width: 100%;
+	height: 200px;
+	/* 照片填充容器，防止失真 */
+	background-size: cover;
+	/* 照片位置居中 */
+	background-position: center;
+	transition: .6s linear;
+}
+
+.product-color {
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.product-color span {
+	width: 14px;
+	height: 14px;
+	background: red;
+	/* 让span元素分开 */
+	margin: 0 10px;
+	/* 使span元素变成圆形 */
+	border-radius: 50%;
+	cursor: pointer;
+
+	position: relative;
+}
+
+.blue {
+	background: #7ed6df;
+}
+
+.green {
+	background: #2cb978;
+}
+
+.yellow {
+	background: #eac100;
+}
+
+.rose {
+	background: #ea7dc7;
+}
+
+/* 添加个伪元素 */
+.product-color .active:after {
+	content: "";
+	width: 22px;
+	height: 22px;
+	border: 2px solid #888;
+	position: absolute;
+	border-radius: 50%;
+	box-sizing: border-box;
+	left: -4px;
+	top: -4px;
+}
+
+.product-info {
+	display: flex;
+	align-items: center;
+}
+
+.product-price {
+	color: #7ed6df;
+	font-size: 26px;
+}
+
+.product-button {
+	margin-left: auto;
+	color:#7ed6df;
+	text-decoration: none;
+	border: 2px solid ;
+	padding: 8px 24px;
+	border-radius: 20px;
+	transform: .4s linear;
+}
+
+.product-button:hover {
+	transform: scale(1.06);
+}
