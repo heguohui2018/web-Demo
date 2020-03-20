@@ -3,6 +3,7 @@
 	padding: 0;
 }
 
+
 a {
 	/* 去掉下划线，字体加粗 */
 	text-decoration: none;
@@ -101,3 +102,4 @@ a {
 	position: relative;
 	left: 800px;
 }
+
