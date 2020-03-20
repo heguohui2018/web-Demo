@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+	width: 100%;
+	min-width: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	position: relative;
+	max-width: 1000px;
+
+	/* 让子元素居中 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* 指定子元素是否使用多行显示，使用 wrap类似于换行 */
+	/* 对于一个flex容器内有两个子容器，其中一个容器放置照片，另一个容器放置文字 */
+	/* flex-wrap: wrap;  实现照片在上，文字在下的效果*/
+	/* flex-wrap: wrap-reverse; 实现文字在上，照片在下的效果*/
+	flex-wrap: wrap;
+}
+
+.container .card {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 100px 0;
+}
+
+.container .card .imgBox {
+	position: relative;
+
+	/* 控制 imgBox盒子的大小 */
+	width: 500px;
+	height: 400px;
+
+	/* 让图片所在容器悬浮于文字所在的容器之上 */
+	left: 25px;
+	z-index: 1;
+}
+
+.container .card .imgBox img {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	/* 让照片填充整个盒子 */
+	/* 避免图片适应盒子的大小，改变原有的尺寸，导致图像失真 */
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container .card .contentBox {
+	position: relative;
+	right: 25px;
+	width: 500px;
+	height: 400px;
+	background: gray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	/* 控制容器内文字效果 */
+	padding: 20px 60px 20px 100px;
+}
+
+.container .card .contentBox:before {
+	content: "";
+	position: absolute;
+	top: -500px;
+	bottom: -50px;
+	left: 0;
+	right: 0;
+	background: #000;
+	z-index: -1;
+}
+
+.container .card .contentBox h2 {
+	font-size: 30px;
+	color: #fff;
+}
+
+
+.container .card .contentBox p {
+	margin-top: 10px;
+	color: #fff;
+}
+
+.container .card .contentBox a {
+	display: inline-block;
+	margin-top: 15px;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	border: 1px solid #fff;
+}
+
+@media(max-width:1000px){
+	.container .card {
+		flex-direction: column;
+		max-width: 350px;
+	}
+
+	.container .card .imgBox {
+		width: 100%;
+		height: 250px;
+		left: 0;
+	}
+
+	.container .card .contentBox {
+		width: 100%;
+		height: auto;
+		right: 0;
+		padding: 30px;
+		text-align: center;
+	}
+}
