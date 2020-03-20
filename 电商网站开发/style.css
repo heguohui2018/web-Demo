@@ -2,3 +2,104 @@
 	margin: 0;
 	padding: 0;
 }
+
+
+a {
+	/* 去掉下划线，字体加粗 */
+	text-decoration: none;
+	font-weight: 800;
+	color: blue;
+}
+
+/* 区块实现居中效果,只需要在父区块同时使用 height, line-hight ，两个区块的值需要相同 */
+.header-top {
+	height: 31px;
+	background: white;
+	display: flex;
+	line-height: 31px
+}
+
+.header-top .header-top-left {
+	position: relative;
+	left: 200px;
+}
+
+.header-top .header-top-left .collection:hover {
+	color: red;
+}
+
+.header-top .header-top-right {
+	position: relative;
+	left: 1000px;
+}
+
+
+.header-top-right .login:hover {
+	color: red;
+}
+
+.header-top-right .register:hover {
+	color: red;
+}
+
+.header-middle {
+	background: greenyellow;
+	display: flex;
+}
+
+.header-middle .header-middle-left {
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+}
+
+.logo {
+	background: yellow;
+	position: relative;
+	left: 200px;
+}
+
+.header-middle .header-middle-search {
+	position: relative;
+	left: 400px;
+	line-height: 100px;
+}
+
+.search_text,.search_btn {
+	height: 35px;
+	border: none;
+}
+
+.search_text {
+	width: 300px;
+}
+
+.search_btn {
+	width: 50px;
+}
+
+.header-middle-shopCar {
+	position: relative;
+	left: 550px;
+	line-height: 100px;
+}
+
+.navBox {
+	height: 35px;
+	background: pink;
+	color: #000;
+	display: flex;
+}
+
+.navBox h3 {
+	position: relative;
+	left: 200px;
+}
+
+.navBox ul {
+	display: flex;
+	list-style: none;
+	position: relative;
+	left: 800px;
+}
+
