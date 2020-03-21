@@ -17,7 +17,8 @@ body {
 	overflow: hidden;
 }
 
-input,.toggle {
+input,
+.toggle {
 	position: absolute;
 	width: 50px;
 	height: 50px;
@@ -50,7 +51,8 @@ input:checked ~ .toggle {
 	transform: rotate(270deg);
 }
 
-.imgBx ,.details{
+.imgBx,
+.details {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -64,11 +66,11 @@ input:checked ~ .toggle {
 	box-sizing: border-box;
 	z-index: 11;
 	pointer-events: none;
-	transition: .5s;
+	transition: 0.5s;
 	opacity: 0;
 }
 
 input:checked ~ .details {
 	opacity: 1;
-	transition-delay: .3s;
+	transition-delay: 0.3s;
 }

@@ -36,4 +36,128 @@ aside {
 
 aside img {
 	margin-bottom: -5px;
+	height: 100px;
+}
+
+.material-icons .md-36 {
+	font-size: 36px;
+}
+
+aside a {
+	display: block;
+	padding: 15px 0;
+	color: white;
+	transition: all 0.35s;
+	text-transform: uppercase;
+	font-size: 0.75em;
+}
+
+aside p {
+	margin: 0;
+	padding: 0;
+}
+
+aside a:hover {
+	background: #000;
+}
+
+aside nav a:nth-child(2) {
+	background: #000;
+}
+
+aside nav a:nth-child(2):hover {
+	background: red;
+}
+
+aside nav a:nth-child(3) {
+	background: #000;
+}
+
+aside nav a:nth-child(3):hover {
+	background: yellow;
+}
+
+aside nav a:nth-child(4) {
+	background: #000;
+}
+
+aside nav a:nth-child(4):hover {
+	background: green;
+}
+
+aside nav a:nth-child(5) {
+	background: #000;
+}
+
+aside nav a:nth-child(5):hover {
+	background: blue;
+}
+
+main {
+	max-width: 980px;
+	background: #000;
+	margin-left: 20%;
+	padding: 12px 50px;
+}
+
+header {
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+header h1 {
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+header h5 {
+	font-weight: 300;
+	letter-spacing: 4px;
+	color: orange;
+}
+
+section {
+	margin: 200px;
+}
+
+.header div {
+	text-align: center;
+}
+
+.header div h3 {
+	color: red;
+}
+
+li {
+	text-align: left;
+	list-style: none;
+}
+
+.about,
+.folio {
+	line-height: 1.5em;
+	letter-spacing: 1px;
+}
+
+.about p {
+	color: orange;
+}
+
+.about span {
+	color: white;
+}
+
+.about h3 {
+	margin: 50px 0;
+}
+
+.container {
+	width: 100%;
+	background-color: #b2b2b2;
+}
+
+.skills {
+	text-align: right;
+	padding-right: 20px;
+	line-height: 30px;
 }
