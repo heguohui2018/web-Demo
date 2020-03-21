@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header,
+footer {
+	display: flex;
+	background: yellow;
+	margin: 0 10px;
+	flex-direction: column;
+}
+
+h1 {
+	color: green;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+article {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex-item {
+	background: pink;
+	width: 400px;
+	margin-left: 10px;
+	padding: 5px;
+	text-align: center;
+}
+
+.item3 {
+	margin-right: 10px;
+}
