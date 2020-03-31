@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn {
+	width: 100px;
+	height: 40px;
+	background: orange;
+	display: block;
+	margin: 40px auto;
+	cursor: pointer;
+}
+
+.box {
+	width: 300px;
+	height: 200px;
+	background: red;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.box:hover {
+	animation: rubberBond 1s;
+}
+
+.btn:hover {
+	animation: rubberBond 1s;
+}
+
+.text:hover {
+	animation: rubberBond 1s;
+}
+
+@keyframes rubberBond {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+	35% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+	45% {
+		transform: scale3d(0.75, 1, 1);
+	}
+	60% {
+		transform: scale3d(1.2, 0.8, 1);
+	}
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
