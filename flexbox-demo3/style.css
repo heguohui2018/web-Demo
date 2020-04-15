@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid pink;
+	padding: 10px;
+	text-align: center;
+}
+
+.item1 {
+	background: pink;
+	margin-bottom: 5px;
+}
+
+.item2 {
+	background: green;
+	margin-top: 5px;
+}

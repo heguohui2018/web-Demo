@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.switch span {
+	color: #ccc;
+	font-size: 1.4rem;
+}
+
+.switch span.active {
+	color: rgb(181, 154, 254);
+	cursor: pointer;
+}

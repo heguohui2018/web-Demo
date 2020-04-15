@@ -7,7 +7,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	text-align: center;
 }
 
@@ -20,7 +20,7 @@
 	min-width: 200px;
 	margin: 10px;
 	cursor: pointer;
-	transition: color .4s linear;
+	transition: color 0.4s linear;
 	position: relative;
 }
 
@@ -39,7 +39,7 @@
 	z-index: -1;
 	transition: transform 0.5s;
 	transform-origin: 0 0;
-	transition-timing-function: cubic-bezier(0.5,1.6,0.7);
+	transition-timing-function: cubic-bezier(0.5, 1.6, 0.7);
 }
 
 .btn1::before {
