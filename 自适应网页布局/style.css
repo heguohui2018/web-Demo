@@ -93,7 +93,6 @@ body {
 	color: #fff;
 }
 
-
 .container .card .contentBox p {
 	margin-top: 10px;
 	color: #fff;
@@ -107,10 +106,8 @@ body {
 	padding: 10px;
 	border: 1px solid #fff;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-@media(max-width:1000px){
+@media (max-width: 1000px) {
 	.container .card {
 		flex-direction: column;
 		max-width: 350px;
@@ -130,8 +127,3 @@ body {
 		text-align: center;
 	}
 }
-=======
->>>>>>> master
-=======
-
->>>>>>> 8504f9fd6f9b412e5ac674109a001f8c549a2a17

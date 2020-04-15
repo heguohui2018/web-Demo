@@ -1,14 +1,6 @@
-* {
+a {
 	margin: 0;
 	padding: 0;
-}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 8504f9fd6f9b412e5ac674109a001f8c549a2a17
-
-a {
 	/* 去掉下划线，字体加粗 */
 	text-decoration: none;
 	font-weight: 800;
@@ -107,8 +99,12 @@ a {
 	left: 800px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> master
 =======
 
 >>>>>>> 8504f9fd6f9b412e5ac674109a001f8c549a2a17
+=======
+
+>>>>>>> b5f674462dbaa617ca5aba6fc66de3d1a373be0b
