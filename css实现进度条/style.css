@@ -4,7 +4,10 @@
 }
 
 body {
+	/* 弹性盒子 */
 	display: flex;
+
+	/* 居中对齐 */
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
@@ -12,9 +15,12 @@ body {
 }
 
 .container {
+	/* 相对定位 */
 	position: relative;
+
 	width: 900px;
 	display: flex;
+	/* 空白填充盒子周围 */
 	justify-content: space-around;
 }
 
@@ -107,6 +113,7 @@ body {
 	color: pink;
 	transform: scale(2);
 }
+
 svg {
 	position: relative;
 	height: 150px;
