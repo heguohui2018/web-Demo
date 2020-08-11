@@ -1,0 +1,50 @@
+body {
+	background-color: gray;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.crud {
+	width: auto;
+	color: orange;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.sub_msg {
+	text-align: center;
+	padding: 10px 0px 20px 0px;
+}
+
+.signup {
+	border: 1px solid yellow;
+	text-align: center;
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+
+.input_group {
+	margin: 0px 20px 20px 20px;
+}
+
+.input_group input {
+	height: 40px;
+	font-size: 20px;
+}
+
+input[type="submit"] {
+	height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: pink;
+	color: white !important;
+}
+
+#errorEmail,
+#errorFirstname,
+#errorLastname,
+#errorPassword {
+	color: red;
+}
