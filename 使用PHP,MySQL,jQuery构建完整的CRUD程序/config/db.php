@@ -11,15 +11,15 @@ if (isset($_SESSION)) {
 	session_start();
 }
 
-$host = '127.0.0.1:3306';
+$host = 'localhost';
 /* $port = 3306; */
-$user = 'root';
+$user = 'root@localhost';
 $password = 'Heguohui@123456';
-$db_name = 'crudapp';
+/* $db_name = 'crudapp'; */
 
 /* 数据库连接 */
-$connection = mysqli_connect($host, $user, $password, $db_name);
+$connection = mysqli_connect($host, $user, $password);
 
-if (!$connection) {
-	die('连接数据库失败 :' . mysqli_errno($connection));
+if ($connection) {
+	echo '连接数据库失败 :' . mysqli_errno($connection);
 }
