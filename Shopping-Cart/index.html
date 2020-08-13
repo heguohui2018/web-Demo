@@ -57,12 +57,30 @@
 				<!-- 右侧导航 -->
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a href="#"
-							><span
+						<a
+							href="#"
+							class="dropdown-toggle"
+							data-toggle="dropdown"
+						>
+							<span
 								class="glyphicon glyphicon-shopping-cart"
 							></span
-							>购物车</a
-						>
+							>购物车 <span class="badge">0</span>
+						</a>
+						<div class="dropdown-menu" style="width: 400px;">
+							<div class="panel panel-success">
+								<div class="panel-heading">
+									<div class="row">
+										<div class="col-md-3">序号</div>
+										<div class="col-md-3">产品图片</div>
+										<div class="col-md-3">产品名称</div>
+										<div class="col-md-3">产品价格</div>
+									</div>
+								</div>
+								<div class="panel-body"></div>
+								<div class="panel-footer"></div>
+							</div>
+						</div>
 					</li>
 					<li>
 						<a href="#"
@@ -188,3 +206,4 @@
 		</div>
 	</body>
 </html>
+
