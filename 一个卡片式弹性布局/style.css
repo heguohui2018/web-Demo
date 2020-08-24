@@ -1,0 +1,65 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	/* 	/1* 弹性容器内盒子排成一列 *1/ */
+	flex-direction: column;
+
+	/* 	/1* 居中 *1/ */
+	align-items: center;
+	justify-content: center;
+}
+
+.row {
+	display: flex;
+
+	/* 居中 */
+	align-items: center;
+	justify-content: center;
+
+	padding: 0 20px;
+}
+
+.card {
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid orange;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 5px;
+	box-shadow: 4px 4px gray;
+}
+
+.card-header {
+	color: #0097a7;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 600;
+	border-bottom: 1px solid #80deea;
+	background-color: #e0f7fa;
+	padding: 5px 10px;
+}
+
+.card-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 0;
+}
+
+.material-icons {
+	font-size: 36px;
+	color: #0097a7;
+	margin-bottom: 5px;
+}
+
+.main-description {
+	color: #0097a7;
+	font-size: 12px;
+	text-align: center;
+}
