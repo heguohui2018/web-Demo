@@ -30,12 +30,15 @@
 	<?php
 	// 显示页面数字连接
 	if ($page) {
+		/* 第一个页面连接 */
 		echo "<a href='index.php?page=1'>First</a> ";
 	}
 	for ($i = 1; $i <= $number_of_pages; $i++) {
+		/* 中间页面连接 */
 		echo "<a href='index.php?page=$i'>" . $i . "</a> ";
 	}
 	if (($page + 1) != $number_of_pages) {
+		/* 最后个页面连接 */
 		echo "<a href='index.php?page=$number_of_pages'>Last</a> ";
 	}
 	?>
